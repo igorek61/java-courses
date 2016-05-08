@@ -22,7 +22,14 @@ public class Main{
                 arg2 = Integer.parseInt(reader.next());
             }
             System.out.println("Choose operator\n1. +\n2. -\n3. *\n4. /");
-            switch (Integer.parseInt(reader.next()))
+            int res;
+            while (true)
+            {
+                res = Integer.parseInt(reader.next());
+                if (res>0 && res<5) break;
+                System.out.println("Error!!! Try input else");
+            }
+            switch (res)
             {
                 case 1: calc = new Add(); 
                     break;
