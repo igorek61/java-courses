@@ -4,6 +4,8 @@ public class Calculate{
         int first = Integer.valueOf(args[0]);
         int second = Integer.valueOf(args[1]);
         int sum = first + second;
+        long raz=first-second;
         System.out.println("Sum   " + sum);
+        System.out.println("Raz   " + raz);
 	}
 }
